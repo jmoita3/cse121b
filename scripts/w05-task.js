@@ -2,6 +2,8 @@
 
 /* Declare and initialize global variables */
 
+document.querySelector('#filtered').addEventListener("change", () => { filterTemples(templeList)})
+
 const templesElement = document.querySelector('#temples')
 
 let templeList = []
@@ -42,21 +44,29 @@ const getTemples = async () => {
 
 const reset = () => {
     templeList = []
+    templesElement.innerHTML = '';
 }
-
 /* filterTemples Function */
 
 const filterTemples = (temples) => {
     reset();
-    let filter = document.getElementById('filtered');
+    let filter = document.getElementById('filtered').value;
+    switch (filter) {
+      case 'utah':  console.log('test data 1');
+        break;
+      case 'nonutah': console.log('test data 2');
+        break;
+      case 'older': console.log('test data 3');
+        break;
+      case 'all': console.log('test data 4');
+      default: return true;
 
-
+  }
 }
 
 getTemples();
 
 /* Event Listener */
 
-const url = 'https://pokeapi.co/api/v2/pokemon/ditto';
-const results = fetch(url);
-console.log(results);
+
+document.querySelector('#filtered').addEventListener('change', () => {filterTemples(templeList) });
