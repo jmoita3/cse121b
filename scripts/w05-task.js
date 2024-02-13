@@ -55,15 +55,13 @@ const filterTemples = async (temples) => {
   let filter = document.getElementById("filtered").value;
   switch (filter) {
     case "utah":
-      for (let i = 0; i < temples.length; i++){
-        displayTemples(temples[i])
-        console.log(temples[i])
-      }
-
-
-
+      var state = /Utah/,
+      utahFiltered = temples.filter(function (str) { return state.test(str.location); });
+      console.log(utahFiltered)
+      console.log("test data 1");
+      console.log(temples)
+      displayTemples(utahFiltered)
       break;
-
     case "nonutah":
       console.log("test data 2");
       break;
@@ -71,8 +69,8 @@ const filterTemples = async (temples) => {
       console.log("test data 3");
       break;
     case "all":
-      console.log("test data 4");
       displayTemples(temples)
+      console.log("test data 4");
     default:
       return true;
   }
