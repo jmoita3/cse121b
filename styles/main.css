@@ -363,15 +363,16 @@ footer {
 
 .time{
     position: absolute;
-    top: 13px;
-    left: 20px;
+    font-size: 12px;
+    top: 10px;
+    left: 26px;
 }
 
 .status-icons{
     width: 50px;
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 16px;
 }
 
 .workout-group{
