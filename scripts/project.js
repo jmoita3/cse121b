@@ -9,7 +9,7 @@ const time = () => {
 time();
 window.setInterval(function () {
   time();
-}, 1000);
+}, 30000);
 
 let muscle = "";
 let muscleGroupData = [];

@@ -333,8 +333,6 @@ footer {
     transform: translate(-50%, -50%);
     background-color: #FFDEE9;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    
-    
 }
 
 .iphone::before{
