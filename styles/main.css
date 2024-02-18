@@ -378,6 +378,10 @@ footer {
     width: 100%;
 }
 
+.workout-group:hover, .exercises-list:hover, .logo:hover{
+    cursor: pointer;
+}
+
 .workout-group-title{
     position: absolute;
     color: white;
