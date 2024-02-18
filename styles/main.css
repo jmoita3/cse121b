@@ -331,6 +331,10 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #FFDEE9;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    
+    
 }
 
 .iphone::before{
@@ -382,13 +386,13 @@ footer {
     font-size: 30px;
 }
 
-.workout-group-title.arms, .workout-group-title.chest{
+.workout-group-title.w-left{
     top: 10px;
     right: 20px;
 
 }
 
-.workout-group-title.back, .workout-group-title.legs{
+.workout-group-title.w-right{
     top: 10px;
     left: 20px;
 }
@@ -426,7 +430,7 @@ footer {
 .logo img{
     display: block;
     margin: 0 auto;
-    max-width: 25%;
+    max-width: 15%;
 }
 
 #exercise-data{
