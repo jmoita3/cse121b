@@ -323,8 +323,8 @@ footer {
 
 .iphone{
     position: relative;
-    height: 500px;
-    width: 250px;
+    height: 600px;
+    width: 300px;
     border-radius: 40px;
     border: solid black 10px;
     position: fixed;
@@ -339,8 +339,8 @@ footer {
 
 .iphone::before{
     content: '';
-    height: 18px;
-    width: 70px;
+    height: 24px;
+    width: 100px;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
@@ -351,7 +351,7 @@ footer {
 .iphone::after{
     position: absolute;
     bottom: 5px;
-    left: 70px;
+    left: 90px;
     content: '';
     height: 4px;
     width: 100px;
@@ -363,16 +363,15 @@ footer {
 
 .time{
     position: absolute;
-    font-size: 12px;
-    top: 10px;
-    left: 26px;
+    top: 13px;
+    left: 20px;
 }
 
 .status-icons{
     width: 50px;
     position: absolute;
     top: 15px;
-    right: 16px;
+    right: 20px;
 }
 
 .workout-group{
@@ -413,8 +412,7 @@ footer {
 }
 
 .exercises-list{
-    max-height: 340px;
-    overflow-y: scroll;
+    max-height: 450px;
 }
 
 .exercises-list p{
@@ -436,24 +434,20 @@ footer {
 }
 
 #exercise-data{
-    width: 200px;
+    width: 250px;
     height: 400px;
     margin: 0 auto;
 }
 
 .instructions-title{
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 12px;
     margin-top: 6px;
 }
 
 .instructions{
     overflow-y: scroll;
-    height: 200px;
-}
-
-.equipment{
-    font-size: 12px;
+    height: 270px;
 }
 
 p{
