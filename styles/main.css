@@ -351,7 +351,7 @@ footer {
 .iphone::after{
     position: absolute;
     bottom: 5px;
-    left: 90px;
+    left: 70px;
     content: '';
     height: 4px;
     width: 100px;
