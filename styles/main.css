@@ -323,8 +323,8 @@ footer {
 
 .iphone{
     position: relative;
-    height: 600px;
-    width: 300px;
+    height: 500px;
+    width: 250px;
     border-radius: 40px;
     border: solid black 10px;
     position: fixed;
@@ -339,8 +339,8 @@ footer {
 
 .iphone::before{
     content: '';
-    height: 24px;
-    width: 100px;
+    height: 18px;
+    width: 70px;
     display: block;
     margin: 0 auto;
     margin-top: 10px;
@@ -412,7 +412,8 @@ footer {
 }
 
 .exercises-list{
-    max-height: 450px;
+    max-height: 340px;
+    overflow-y: scroll;
 }
 
 .exercises-list p{
@@ -434,20 +435,24 @@ footer {
 }
 
 #exercise-data{
-    width: 250px;
+    width: 200px;
     height: 400px;
     margin: 0 auto;
 }
 
 .instructions-title{
-    font-size: 22px;
+    font-size: 16px;
     margin-bottom: 12px;
     margin-top: 6px;
 }
 
 .instructions{
     overflow-y: scroll;
-    height: 270px;
+    height: 200px;
+}
+
+.equipment{
+    font-size: 12px;
 }
 
 p{

@@ -62,6 +62,7 @@ const createExerciseData = (exercises) => {
           exerciseInstructionsTitle.appendChild(exerciseInstructionsTitleText);
           exerciseInstructionsTitle.classList.add("instructions-title");
           exerciseEquipmentPage.appendChild(exerciseEquipmentTextPage);
+          exerciseEquipmentPage.classList.add("equipment");
           exerciseNamePage.appendChild(exerciseNameTextPage);
           exerciseData.appendChild(exerciseNamePage);
           exerciseData.appendChild(exerciseEquipmentPage);
