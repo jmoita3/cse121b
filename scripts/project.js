@@ -1,16 +1,13 @@
 const time = () => {
   const timeElement = document.querySelector(".time");
-  var currentTime = new Date();
+  let currentTime = new Date();
   const hours = currentTime.getHours();
   const minutes = currentTime.getMinutes();
-  var formattedNumber = ("0" + minutes).slice(-2);
+  let formattedNumber = ("0" + minutes).slice(-2);
   timeElement.innerHTML = hours + ":" + formattedNumber;
 };
 time();
-window.setInterval(function () {
-  time();
-}, 30000);
-
+window.setInterval( () => { time()}, 10000)
 let muscle = "";
 let muscleGroupData = [];
 const muscleGroups = document.getElementById("muscle-groups");
