@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE 121b | W05: Programming Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSE 121b | W05: Programming Tasks</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li><a id="toggleMenu">&equiv;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="w01-task.html">W1 Task</a></li>
+        <li><a href="w03-task.html">W3 Task</a></li>
+        <li><a href="w04-task.html">W4 Task</a></li>
+        <li><a href="w05-task.html">W5 Task</a></li>
+        <li><a href="project.html" class="active">Project</a></li>
+      </ul>
+    </nav>
+    <main id="project">
+      <div class="iphone">
+        <p class="time">
+        </p>
+        <div class="logo" onclick="returnHome()">
+          <img src="images/logo-no-background.png" alt="logo">
+        </div>
+        <img src="images/status-icons.png" alt="" class="status-icons">
 
-<body>
-  <nav>
-    <ul id="menu">
-      <li><a id="toggleMenu">&equiv;</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="w01-task.html">W1 Task</a></li>
-      <li><a href="w03-task.html">W3 Task</a></li>
-      <li><a href="w04-task.html">W4 Task</a></li>
-      <li><a href="w05-task.html" >W5 Task</a></li>
-      <li><a href="project.html" class="active">Project</a></li>
-    </ul>
-  </nav>
+        <div id="muscle-groups" class="content-wrapper">
+          <div class="workout-group" onclick="changeSection('biceps')">
+            <p class="workout-group-title arms">Biceps</p>
+            <img src="images/arms.png" alt="biceps">
+          </div>
+          <div class="workout-group" onclick="changeSection('middle_back')">
+            <p class="workout-group-title back">Back</p>
+            <img src="images/back.png" alt="back">
+          </div>
+          <div class="workout-group" onclick="changeSection('chest')">
+            <p class="workout-group-title chest">Chest</p>
+            <img src="images/chest.png" alt="chest">
+          </div>
+          <div class="workout-group" onclick="changeSection('glutes')">
+            <p class="workout-group-title legs">Legs</p>
+            <img src="images/legs.png" alt="legs">
+          </div>
+        </div>
+        <div id="exercises-list" class="hidden exercises-list"></div>
+        <div id="exercise-data" class="hidden"></div>
+      </div>
+    </main>
 
-
-  <footer>
-    &copy;<span id="year"></span> | Week 05 - Fetching Temple Data | CSE 121b
-  </footer>
-  <script src="scripts/main.js"></script>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
-  <script src="scripts/project.js"></script>
-</body>
-
+    <footer>
+      &copy;<span id="year"></span> | Week 05 - Fetching Temple Data | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/project.js"></script>
+  </body>
 </html>

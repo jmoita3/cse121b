@@ -13,12 +13,12 @@ let templeList = [];
 /* async displayTemples Function */
 
 const displayTemples = (temples) => {
-  for (i = 0; i < temples.length; i++) {
+  for (const temple of temples) {
     const article = document.createElement("article");
     const templeName = document.createElement("h3");
-    const templeNameText = document.createTextNode(templeList[i].templeName);
+    const templeNameText = document.createTextNode(temple.templeName);
     const templeImage = document.createElement("img");
-    templeImage.src = templeList[i].imageUrl;
+    templeImage.src = temple.imageUrl;
     templeName.appendChild(templeNameText);
     article.appendChild(templeName);
     article.appendChild(templeImage);
@@ -55,15 +55,10 @@ const filterTemples = async (temples) => {
   let filter = document.getElementById("filtered").value;
   switch (filter) {
     case "utah":
-      var state = /Utah/,
-      utahFiltered = temples.filter(function (str) { return state.test(str.location); });
-      console.log(utahFiltered)
-      console.log("test data 1");
-      console.log(temples)
-      displayTemples(utahFiltered)
+      displayTemples(temples.filter(e => e.location.includes('Utah')));
       break;
     case "nonutah":
-      console.log("test data 2");
+      displayTemples(temples.filter(e => !(e.location.includes('Utah'))));
       break;
     case "older":
       console.log("test data 3");
